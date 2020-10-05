@@ -1,17 +1,14 @@
 <template>
 <div class="container">
     <div>
-        <Logo />
-        <h1 class="title">
-            mobile-safari-failed-router-push-or-redirect-when-page-contains-tel-link
-        </h1>
-        <div class="links">
-            <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer" class="button--green">
-                Documentation
-            </a>
-            <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer" class="button--grey">
-                GitHub
-            </a>
+        <div>
+            <nuxt-link to="redirect-ok">redirect-ok</nuxt-link>
+        </div>
+        <div>
+            <nuxt-link to="redirect-with-tel">redirect-with-tel</nuxt-link>
+        </div>
+        <div>
+            <nuxt-link to="redirect-with-tel-and-meta">redirect-with-tel-and-meta</nuxt-link>
         </div>
     </div>
 </div>
