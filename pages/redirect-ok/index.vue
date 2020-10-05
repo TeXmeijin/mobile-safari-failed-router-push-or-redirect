@@ -10,7 +10,9 @@ import Vue from 'vue'
 export default Vue.extend({
     methods: {
         handle() {
-            this.$router.push('/redirect')
+            this.$router.push({
+                name: 'redirect'
+            })
         }
     }
 })

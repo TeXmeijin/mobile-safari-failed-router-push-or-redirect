@@ -2,7 +2,9 @@ import { Middleware } from "@nuxt/types";
 
 
 const redirect: Middleware = ({redirect}) => {
-    redirect(302, '/')
+    redirect({
+        name: 'index'
+    })
 }
 
 export default redirect

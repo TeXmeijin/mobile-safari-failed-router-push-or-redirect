@@ -1,5 +1,6 @@
 <template>
 <div>
+    <label>電話番号</label>
     <a href="tel:01-2345-6789">01-2345-6789</a>
     <br>
     <button @click="handle">Click for redirect</button>
@@ -12,7 +13,9 @@ import Vue from 'vue'
 export default Vue.extend({
     methods: {
         handle() {
-            this.$router.push('/redirect')
+            this.$router.push({
+                name: 'redirect'
+            })
         }
     }
 })
